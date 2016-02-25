@@ -1,6 +1,6 @@
 //Width and height
-var w = 500;
-var h = 300;
+var w = 2000;
+var h = 1500;
 
 //Define map projection
 var projection = d3.geo.albersUsa()
