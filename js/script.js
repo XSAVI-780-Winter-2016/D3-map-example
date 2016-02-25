@@ -3,7 +3,7 @@ var w = 1000;
 var h = 800;
 
 //Define map projection
-var projection = d3.geo.orthographic()
+var projection = d3.geo.albersUsa()
                        .translate([w/2, h/2])
                        .scale([1000]);
 
