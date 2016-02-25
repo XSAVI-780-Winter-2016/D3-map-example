@@ -47,9 +47,12 @@ d3.csv("data/us-ag-productivity-2004.csv", function(data) {
                 var jsonState = json.features[j].properties.name;
     
                 if (dataState == jsonState) {
-            
+                     
                     //Copy the data value into the JSON
                     json.features[j].properties.value = dataValue;
+                    
+                    console.log(dataState);
+                    console.log(json.features[j].properties.value);
                     
                     //Stop looking through the JSON
                     break;
@@ -57,6 +60,7 @@ d3.csv("data/us-ag-productivity-2004.csv", function(data) {
                 }
             }       
         }
+        console.log(json);
 
         //Bind data and create one path per GeoJSON feature
         var paths = svg.selectAll("path")
