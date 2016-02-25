@@ -5,7 +5,7 @@ var h = 800;
 //Define map projection
 var projection = d3.geo.albersUsa()
                        .translate([w/2, h/2])
-                       .scale([500]);
+                       .scale([1000]);
 
 //Define path generator
 var path = d3.geo.path()
